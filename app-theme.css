@@ -1,0 +1,102 @@
+/* Accent backgrounds become pure black. */
+.dark-black-theme [class*='bg-violet'],
+.dark-black-theme [class*='bg-indigo'],
+.dark-black-theme [class*='bg-blue-'],
+.dark-black-theme [class*='bg-sky'],
+.dark-black-theme [class*='bg-cyan'],
+.dark-black-theme [class*='bg-teal'],
+.dark-black-theme [class*='bg-emerald'],
+.dark-black-theme [class*='bg-white'],
+.dark-black-theme [class*='from-violet'],
+.dark-black-theme [class*='from-indigo'],
+.dark-black-theme [class*='from-blue'],
+.dark-black-theme [class*='from-sky'],
+.dark-black-theme [class*='from-cyan'],
+.dark-black-theme [class*='from-teal'],
+.dark-black-theme [class*='from-emerald'],
+.dark-black-theme [class*='to-violet'],
+.dark-black-theme [class*='to-indigo'],
+.dark-black-theme [class*='to-blue'],
+.dark-black-theme [class*='to-sky'],
+.dark-black-theme [class*='to-cyan'],
+.dark-black-theme [class*='to-teal'],
+.dark-black-theme [class*='to-emerald'],
+.dark-black-theme [class*='via-blue'],
+.dark-black-theme [class*='via-violet'],
+.dark-black-theme [class*='via-sky'],
+.dark-black-theme [class*='via-cyan'],
+.dark-black-theme [class*='via-teal'],
+.dark-black-theme [class*='via-emerald'] {
+  background: #000 !important;
+  background-color: #000 !important;
+  background-image: none !important;
+}
+
+/* Neutral surfaces use dark grey to keep black+grey contrast. */
+.dark-black-theme [class*='bg-slate'],
+.dark-black-theme [class*='bg-zinc'],
+.dark-black-theme [class*='bg-neutral'],
+.dark-black-theme [class*='bg-gray'],
+.dark-black-theme [class*='bg-stone'] {
+  background-color: #111111 !important;
+}
+
+.dark-black-theme [class*='text-violet'],
+.dark-black-theme [class*='text-indigo'],
+.dark-black-theme [class*='text-blue-'],
+.dark-black-theme [class*='text-sky'],
+.dark-black-theme [class*='text-cyan'],
+.dark-black-theme [class*='text-teal'],
+.dark-black-theme [class*='text-emerald'] {
+  color: #e5e7eb !important;
+}
+
+.dark-black-theme [class*='border-violet'],
+.dark-black-theme [class*='border-indigo'],
+.dark-black-theme [class*='border-blue-'],
+.dark-black-theme [class*='border-sky'],
+.dark-black-theme [class*='border-cyan'],
+.dark-black-theme [class*='border-teal'],
+.dark-black-theme [class*='border-emerald'],
+.dark-black-theme [class*='ring-violet'],
+.dark-black-theme [class*='ring-indigo'],
+.dark-black-theme [class*='ring-blue-'],
+.dark-black-theme [class*='ring-sky'],
+.dark-black-theme [class*='ring-cyan'],
+.dark-black-theme [class*='ring-teal'],
+.dark-black-theme [class*='ring-emerald'] {
+  border-color: #27272a !important;
+  --tw-ring-color: #27272a !important;
+}
+
+/* Keep borders consistently dark grey in dark mode. */
+.dark-black-theme [class*='border-'] {
+  border-color: #27272a !important;
+}
+
+/* Menu items should not have grey fill in dark mode. */
+.dark-black-theme aside button,
+.dark-black-theme aside [role='button'],
+.dark-black-theme nav button,
+.dark-black-theme nav [role='button'],
+.dark-black-theme [role='menu'] button,
+.dark-black-theme [role='menuitem'] {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+@keyframes appCardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.app-card-fade-in {
+  animation: appCardFadeIn 220ms ease-out both;
+}
